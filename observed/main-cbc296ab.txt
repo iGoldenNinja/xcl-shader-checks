@@ -1,0 +1,14 @@
+XCL main cbc296ab65a2661a61e3e2da109134bcd5319f60
+Synthetic 2D IMAGE_ATOMIC_UMAX fixture from this repository.
+Windows x64 with DXC and DXIL validator 1.9.2609.5.
+
+DMASK 1, GLC 0: HLSL i32, direct DXIL i32. Expected i32.
+DMASK 3, GLC 0: HLSL i32, direct DXIL i32. Expected i64.
+DMASK 3, GLC 1: HLSL i32, direct DXIL i32. Expected i64.
+
+All six modules validated. The generated HLSL and DXIL differ from the earlier
+6567c5ff baseline, and the atomic-width results remain the same. This run
+compared compilation and validation. GPU value readback was outside its scope.
+
+Upstream issue: https://github.com/xcl-dev/xcl/issues/1485
+Tested by iGoldenNinja with OpenAI Codex assistance.
