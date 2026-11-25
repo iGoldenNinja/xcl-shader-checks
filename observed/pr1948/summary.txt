@@ -1,0 +1,10 @@
+dmask=1 glc=0 code=08115cf00a160400000081bf
+xcl: DXC: dxcompiler 1.9.2609.5 (01b62ad4), dxil 1.9.2609.5
+hlsl_mask1_glc0 compiled validated umax=i32 expected=i32 match=true
+direct_mask1_glc0 compiled validated umax=i32 expected=i32 match=true
+dmask=3 glc=0 code=08135cf00a160400000081bf
+hlsl_mask3_glc0 compiled validated umax=i32 expected=i64 match=false
+direct_mask3_glc0 compiled validated umax=i64 expected=i64 match=true
+dmask=3 glc=1 code=08335cf00a160400000081bf
+hlsl_mask3_glc1 compiled validated umax=i32 expected=i64 match=false
+direct_mask3_glc1 compiled validated umax=i64 expected=i64 match=true
